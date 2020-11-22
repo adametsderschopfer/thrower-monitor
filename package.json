@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/adametsofficial/thrower-monitor/issues"
   },
-  "homepage": "https://github.com/adametsofficial/thrower-monitor#readme"
+  "homepage": "https://github.com/adametsofficial/thrower-monitor#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
