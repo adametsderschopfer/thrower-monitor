@@ -1,3 +1,4 @@
+const webpack = require("webpack");
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
@@ -7,7 +8,11 @@ const __DEV__ = NODE_ENV === "development";
 
 module.exports = {
   mode: NODE_ENV || "development",
-  entry: ["./src/thrower-monitor.js", "./src/styles/styleClassNames.js"],
+  entry: [
+    "./src/thrower-monitor.js",
+    "./src/styles/styleClassNames.js",
+    "./src/index.js",
+  ],
   output: {
     path: path.join(__dirname, "lib"),
     filename: "[name].bundle.js",
@@ -23,6 +28,9 @@ module.exports = {
         }),
       ]
     : [new CleanWebpackPlugin()],
+  resolve: {
+    modules: [path.resolve(__dirname, 'node_modules'), 'node_modules'],
+  },
   module: {
     rules: [
       {
