@@ -1,0 +1,29 @@
+{
+  "name": "@addesign/thrower-monitor",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adametsofficial/thrower-monitor.git"
+  },
+  "keywords": [
+    "js",
+    "react",
+    "throw",
+    "error",
+    "errormonitor",
+    "react-errors",
+    "errors",
+    "thrower-monitor"
+  ],
+  "author": "Adametsofficial <av.styledev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adametsofficial/thrower-monitor/issues"
+  },
+  "homepage": "https://github.com/adametsofficial/thrower-monitor#readme"
+}
